@@ -20,15 +20,20 @@ const Navigation = () => {
 	return (
 		<nav className={`navigation ${navSticky}`}>
 			<span id="logoNavBar">
-				<span id="textLogoNavBar">AF</span>
+				<NavLink exact="true" to="/">
+					<span id="textLogoNavBar">AF</span>
+				</NavLink>
 			</span>
 			<ul className="navBar">
 				<li className="noUnderline">
-					<NavLink exact="true" to="/Bruh">
-						<span id="navBarGithub">
-							<RiGitMergeLine /> <BsFillStarFill />
-						</span>
-					</NavLink>
+					<a
+						id="navBarGithub"
+						href="https://github.com/Florian-Audouard/PortFolio"
+						target="_blank"
+						rel="noreFerrer"
+					>
+						<RiGitMergeLine /> <BsFillStarFill />
+					</a>
 				</li>
 				<li>
 					<NavLink exact="true" to="/About">

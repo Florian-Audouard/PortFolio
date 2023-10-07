@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    background-color: rgb(5,5,43);
+    height: 50px;
+    display: flex;
+    text-align: center;
+
+    .footerCollumn {
+        flex: 0 0 auto;
+        width: 33.3333333%;
+    }
+    svg{
+        margin-top: 5px;
+        text-align: right;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footerText{
+        margin-top: 15px;
+        font-size: 17px;
+    }
+}
