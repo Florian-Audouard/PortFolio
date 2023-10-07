@@ -1,0 +1,86 @@
+$bordercolor : red;
+
+
+.navigation{
+    position: sticky;
+    top : 0;
+    
+    background-color: transparent ;
+
+    height: 75px;
+    user-select: none;
+    #logoNavBar{
+        float: left;
+        cursor: pointer;
+        padding-left: 200px;
+
+    }
+    #navBarGithub{
+        background-color: rgba(10,10,75,0.75) ;
+        padding-top: 7px;
+        padding-bottom: 7px ;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -7px;
+        border: solid 1px darkblue;
+        border-radius: 5px;
+    }
+    ul {
+        list-style: none;
+        margin-left: -0.5em;
+        margin-right: -0.5em;
+        padding-right: 200px;
+        padding-top: 25px;
+    }
+    svg{
+        margin-bottom: -2px;
+        height: 21px;
+        margin-right: 3px;
+    }
+
+    li{
+        color: white;
+        float: right;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        cursor: pointer;
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+    }
+    #textLogoNavBar{
+        padding-top: 10px;
+        font-size: 55px;
+        font-family: BlackHole;
+    }
+    li:not(.noUnderline){
+
+          
+        a {
+        display: inline-block;
+        padding-bottom: 0.25rem; /* defines the space between text and underline */
+        position: relative;
+        }
+        
+        a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 5px;
+        background-color: darkblue ;
+        border-radius: 10px;
+        transition: width 0.25s ease-out;
+        }
+        a:hover::before {
+        width: 100%;            
+
+        }
+    }
+    
+    
+}
+.sticky{
+    background-color: rgba(5,5,43,0.9) ;
+}
