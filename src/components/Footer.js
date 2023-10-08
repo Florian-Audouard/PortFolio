@@ -14,6 +14,7 @@ const Footer = () => {
 				href="https://storyset.com/web"
 				target="_blank"
 				rel="noreFerrer"
+				onDragStart={(event) => event.preventDefault()}
 			>
 				Web illustrations by Storyset
 			</a>
@@ -22,6 +23,7 @@ const Footer = () => {
 					href="https://github.com/Florian-Audouard"
 					target="_blank"
 					rel="noreFerrer"
+					onDragStart={(event) => event.preventDefault()}
 				>
 					<FaGithubSquare size={20} />
 				</a>
@@ -29,6 +31,7 @@ const Footer = () => {
 					href="https://www.linkedin.com/in/florian-audouard-8b5b451a3/"
 					target="_blank"
 					rel="noreFerrer"
+					onDragStart={(event) => event.preventDefault()}
 				>
 					<BsLinkedin size={20} />
 				</a>

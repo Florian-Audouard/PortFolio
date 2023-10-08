@@ -1,0 +1,74 @@
+.about{
+    font-size: 20px;
+
+    .aboutContainer1{
+        
+        padding-top: 50px;
+        padding-left: 20%;
+        width: 60%;
+        display: flex;
+        text-align: center;
+
+        .aboutCollumn1{
+            width: 50%;
+            h1{
+                text-align: center
+            }
+            svg{
+                width: 15px;
+                height: 15px;
+                padding-right: 5px;
+            }
+          
+        }
+        .aboutCollumn2{
+            width: 50%;
+            img{
+                width: 80%;
+            }
+        }
+          .textWithImg >*{
+            text-align: justify;
+            padding-top: 10px;
+        }
+        .HobbieList{
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+        .HobbieList li{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+    }
+    .titleSkill{
+        padding-top: 3%;
+        text-align: center;
+    }
+    
+    .aboutContainer2{
+        padding-left: 15%;
+        width: 70%;
+        text-align: center;
+        svg{
+            width: 80px;
+            height: 80px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin:30px;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            box-shadow: 0 0 10px darkblue;
+            transition: 0.5s ;
+        }
+        svg:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 20px darkblue;
+        }
+    }
+    .aboutEndOfPage{
+        padding-bottom: 5%;
+    }
+}

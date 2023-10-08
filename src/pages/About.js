@@ -1,12 +1,98 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import { LuGamepad2 } from "react-icons/lu";
+import { GiOpenBook } from "react-icons/gi";
+import {
+	FaPlane,
+	FaReact,
+	FaJava,
+	FaPython,
+	FaAngular,
+	FaWindows,
+	FaGithub,
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { BsGit } from "react-icons/bs";
+import { BiLogoPostgresql, BiLogoVisualStudio } from "react-icons/bi";
+import { SiVercel } from "react-icons/si";
 
 const About = () => {
 	return (
 		<div>
 			<Navigation />
-			About
+			<div className="about">
+				<div className="aboutContainer1">
+					<span className="aboutCollumn1 textWithImg">
+						<h1>
+							Qui Suis-<span className="importantText">JE</span>
+						</h1>
+						<div className="space" />
+						<div>
+							Bonjour, je suis{" "}
+							<span className="importantText">
+								Audouard Florian
+							</span>{" "}
+							de{" "}
+							<span className="importantText">
+								La Londes les Maures en France.
+							</span>
+						</div>
+						<div>
+							Je vien de finir ma licence en informatique et je
+							suis à la recherche d'un emploie.
+						</div>
+						<div className="space" />
+						<div>
+							En plus de ma passion pour la programmation voici
+							quelque activié que j'aime faire :
+							<ul className="HobbieList">
+								<li>
+									<LuGamepad2 />
+									Jeux Video
+								</li>
+								<li>
+									<GiOpenBook />
+									Regarder/Lire des mangas
+								</li>
+								<li>
+									<FaPlane />
+									Voyager
+								</li>
+							</ul>
+						</div>
+					</span>
+					<span className="aboutCollumn2">
+						<img
+							src="img/Developer-activity.svg"
+							alt="Illustartion Developpeur"
+							onDragStart={(event) => event.preventDefault()}
+						></img>
+					</span>
+				</div>
+				<h1 className="titleSkill">
+					<span className="importantText">Compétence</span>{" "}
+					Professionnelle
+				</h1>
+				<div className="aboutContainer2">
+					<FaPython />
+					<FaJava />
+					<IoLogoJavascript />
+					<BiLogoPostgresql />
+					<FaReact />
+					<FaAngular />
+					<BsGit />
+				</div>
+				<h1 className="titleSkill">
+					<span className="importantText">Outils</span> que j'utilise
+				</h1>
+				<div className="aboutContainer2 aboutEndOfPage">
+					<BiLogoVisualStudio />
+					<FaWindows />
+					<SiVercel />
+					<FaGithub />
+				</div>
+			</div>
 			<Footer />
 		</div>
 	);

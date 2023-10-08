@@ -1,11 +1,6 @@
 .home{
-    .space{
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .importantText{
-        color:darkblue;
-    }
+
+
     .waving{
         animation-duration: 2s;
         transform-origin: 70% 70%;
@@ -50,7 +45,7 @@
             width: 50%;
         }
         .textWithImg >*{
-            text-align: left;
+            text-align: justify;
             padding-left: 40%;
             padding-top: 10px;
         }
@@ -78,7 +73,7 @@
             text-align: center;
 
             .homeCollumn1{
-                text-align: left;
+                text-align: justify;
                 width:45%;
                 font-size: 20px;
             }
@@ -99,7 +94,7 @@
         text-align: center;
         padding-bottom: 5%;
         .socialIconBox{
-            padding-top: 25px;
+            padding-top: 5%;
         }
         .socialIcon{
             margin-left: 15px;

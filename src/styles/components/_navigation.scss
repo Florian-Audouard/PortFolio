@@ -9,6 +9,7 @@ $bordercolor : red;
     overflow: hidden;
     height: 75px;
     user-select: none;
+    z-index:100;
     #logoNavBar{
         float: left;
         cursor: pointer;
@@ -24,9 +25,16 @@ $bordercolor : red;
         margin-top: -7px;
         border: solid 1px darkblue;
         border-radius: 5px;
+        transition: 0.5s ;
+        box-shadow: 0 0 5px darkblue;
+
+    }
+    #navBarGithub:hover{
+        transform: scale(1.1);
+        background-color: rgba(10,10,100,0.75) ;
+        box-shadow: 0 0 15px darkblue;
     }
     ul {
-        list-style: none;
         margin-left: -0.5em;
         margin-right: -0.5em;
         padding-right: 200px;
@@ -41,8 +49,8 @@ $bordercolor : red;
     li{
         color: white;
         float: right;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        margin-left: 1em;
+        margin-right: 1em;
         cursor: pointer;
         font-size: 21px;
         display: flex;
@@ -75,7 +83,6 @@ $bordercolor : red;
         }
         a:hover::before {
         width: 100%;            
-
         }
     }
     

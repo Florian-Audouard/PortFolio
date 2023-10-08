@@ -18,7 +18,11 @@ const Navigation = () => {
 	return (
 		<nav className={`navigation ${navSticky}`}>
 			<span id="logoNavBar">
-				<NavLink exact="true" to="/">
+				<NavLink
+					exact="true"
+					to="/"
+					onDragStart={(event) => event.preventDefault()}
+				>
 					<span id="textLogoNavBar">AF</span>
 				</NavLink>
 			</span>
@@ -29,29 +33,47 @@ const Navigation = () => {
 						href="https://github.com/Florian-Audouard/PortFolio"
 						target="_blank"
 						rel="noreFerrer"
+						onDragStart={(event) => event.preventDefault()}
 					>
 						<RiGitMergeLine /> <BsFillStarFill />
 					</a>
 				</li>
+
 				<li>
-					<NavLink exact="true" to="/About">
-						<BsPerson />À propos
-					</NavLink>
-				</li>
-				<li>
-					<NavLink exact="true" to="/Projects">
-						<FiMonitor />
-						Projets
-					</NavLink>
-				</li>
-				<li>
-					<NavLink exact="true" to="/Resume">
+					<NavLink
+						exact="true"
+						to="/Resume"
+						onDragStart={(event) => event.preventDefault()}
+					>
 						<BiFile />
 						CV
 					</NavLink>
 				</li>
 				<li>
-					<NavLink exact="true" to="/">
+					<NavLink
+						exact="true"
+						to="/Projects"
+						onDragStart={(event) => event.preventDefault()}
+					>
+						<FiMonitor />
+						Projets
+					</NavLink>
+				</li>
+				<li>
+					<NavLink
+						exact="true"
+						to="/About"
+						onDragStart={(event) => event.preventDefault()}
+					>
+						<BsPerson />À propos
+					</NavLink>
+				</li>
+				<li>
+					<NavLink
+						exact="true"
+						to="/"
+						onDragStart={(event) => event.preventDefault()}
+					>
 						<RxHome />
 						Accueil
 					</NavLink>
