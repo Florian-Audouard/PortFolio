@@ -27,12 +27,11 @@ const Navigation = () => {
 		} else {
 			window.addEventListener("scroll", isSticky);
 		}
-
-		setExtend(true);
 	}
 	window.addEventListener("resize", addaptNavBar);
 	useEffect(() => {
 		addaptNavBar();
+		setExtend(false);
 	}, []);
 	return (
 		<nav className={`navigation ${navSticky}`}>
