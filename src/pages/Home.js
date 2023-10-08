@@ -41,7 +41,7 @@ const Home = () => {
 					</span>
 					<span className="homeCollumn ">
 						<img
-							src="img/Programming-amico.svg"
+							src="image/Programming-amico.svg"
 							alt="Illustartion Developpeur"
 							onDragStart={(event) => event.preventDefault()}
 						></img>
@@ -99,7 +99,7 @@ const Home = () => {
 						</div>
 						<div className="homeCollumn2">
 							<img
-								src="img/Programming-pana.svg"
+								src="image/Programming-pana.svg"
 								alt="Illustartion Developpeur"
 								onDragStart={(event) => event.preventDefault()}
 							></img>

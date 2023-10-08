@@ -13,14 +13,14 @@ const Projects = () => {
 				</h1>
 				<div className="projectsContainer">
 					<ProjectsItem
-						img="img/Laptop-Lexika.png"
+						img="image/Laptop-Lexika.png"
 						title="Lexika"
 						githubLink="https://github.com/Lexika-Project/lexika"
 						demoLink="https://lexika.vercel.app/home"
 						text="Un site qui permet de voir la traduction de mots issue de langues kanak (Nouvelle-Calédonie) qui a été récupérée et mis dans une base de données grâce à une méthode d'OCR."
 					/>
 					<ProjectsItem
-						img="img/Laptop-Cartes.png"
+						img="image/Laptop-Cartes.png"
 						title="Les Cartes Logiques"
 						githubLink="https://github.com/DienF/Les-cartes-logiques"
 						demoLink="https://les-cartes-logiques.vercel.app"
@@ -28,7 +28,7 @@ const Projects = () => {
 						 Ce site m'a donné l'occasion d'apprendre React."
 					/>
 					<ProjectsItem
-						img="img/Laptop-Barker.png"
+						img="image/Laptop-Barker.png"
 						title="Barker"
 						githubLink="https://github.com/GuillaumePerron/barker"
 						demoLink="https://barker-projet-info.vercel.app"

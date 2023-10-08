@@ -67,7 +67,7 @@ const About = () => {
 					</span>
 					<span className="aboutCollumn2">
 						<img
-							src="img/Developer-activity.svg"
+							src="image/Developer-activity.svg"
 							alt="Illustartion Developpeur"
 							onDragStart={(event) => event.preventDefault()}
 						></img>
