@@ -32,6 +32,7 @@ const Navigation = () => {
 	useEffect(() => {
 		addaptNavBar();
 		setExtend(false);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
 		<nav className={`navigation ${navSticky}`}>
