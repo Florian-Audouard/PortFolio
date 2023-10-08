@@ -1,0 +1,22 @@
+.resume{
+  text-align: center;
+    .downloadButton{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        svg{
+            width: 19px;
+            height: 19px;
+            margin-right: 10px;
+        }
+    }
+    .resumePdf{
+        display: inline-block;
+    }
+}

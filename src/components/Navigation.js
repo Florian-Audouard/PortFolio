@@ -30,6 +30,7 @@ const Navigation = () => {
 				<li className="noUnderline">
 					<a
 						id="navBarGithub"
+						className="button"
 						href="https://github.com/Florian-Audouard/PortFolio"
 						target="_blank"
 						rel="noreFerrer"
