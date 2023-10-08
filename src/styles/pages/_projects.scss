@@ -1,13 +1,24 @@
 .projects{
     .projectsTitle{
         text-align: center;
-        padding-top: 5%;
+        @media only screen and (min-width: 780px) {
+            padding-top: 5%;
+        }
+        @media only screen and (max-width: 780px) {
+            padding-top: 15%;
+            padding-bottom: 15%;
+            max-width: 80%;
+            padding-left: 10%;
+        }
     }
     .projectsContainer{
-        width: 70%;
-        padding-left: 15%;
+
         padding-top: 5%;
-        display: flex;
+        @media only screen and (min-width: 780px) {
+            display: flex;
+            width: 70%;
+            padding-left: 15%;
+        }
         
         
 
