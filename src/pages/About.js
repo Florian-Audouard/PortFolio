@@ -35,17 +35,20 @@ const About = () => {
 							</span>{" "}
 							de{" "}
 							<span className="importantText">
-								La Londes les Maures en France.
+								La Londe les Maures en France.
 							</span>
 						</div>
 						<div>
-							Je vien de finir ma licence en informatique et je
-							suis à la recherche d'un emploie.
+							Je viens de finir ma{" "}
+							<span className="importantText">
+								Licence Informatique
+							</span>{" "}
+							et je suis à la recherche d'un emploi.
 						</div>
 						<div className="space" />
 						<div>
-							En plus de ma passion pour la programmation voici
-							quelque activié que j'aime faire :
+							En plus de ma passion pour la programmation, voici
+							quelques activités que j'aime faire :
 							<ul className="HobbieList">
 								<li>
 									<LuGamepad2 />
@@ -53,7 +56,7 @@ const About = () => {
 								</li>
 								<li>
 									<GiOpenBook />
-									Regarder/Lire des mangas
+									Regarder et Lire des mangas
 								</li>
 								<li>
 									<FaPlane />
@@ -71,8 +74,8 @@ const About = () => {
 					</span>
 				</div>
 				<h1 className="titleSkill">
-					<span className="importantText">Compétence</span>{" "}
-					Professionnelle
+					<span className="importantText">Compétences</span>{" "}
+					Professionnelles
 				</h1>
 				<div className="aboutContainer2">
 					<FaPython />

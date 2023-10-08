@@ -58,14 +58,14 @@
             padding-left: 80px;
             padding-right: 80px;
             margin:30px;
-            border: 2px solid darkblue;
+            border: 2px solid $color1;
             border-radius: 10px;
-            box-shadow: 0 0 10px darkblue;
+            box-shadow: 0 0 10px $color1;
             transition: 0.5s ;
         }
         svg:hover{
             transform: scale(1.1);
-            box-shadow: 0 0 20px darkblue;
+            box-shadow: 0 0 20px $color1;
         }
     }
     .aboutEndOfPage{

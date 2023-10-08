@@ -82,7 +82,7 @@
                 padding-left: 5%;
                 img{
                     width: 50%;
-                    border: solid 5px darkblue;
+                    border: solid 5px $color1;
                     border-radius: 50%;
                 }
     
@@ -107,7 +107,7 @@
             font-size: 1.2em ;
             line-height: 2em ;
             background-color: white ;
-            color:darkblue;
+            color:$color1;
             border-radius: 50% ;
             transition: 0.5s ;
         }
@@ -130,7 +130,7 @@
           }
           
           .socialIcons:hover {
-            color: darkblue;
+            color: $color1;
             box-shadow: 0 0 10px blue;
             text-shadow: 0 0 5px blue;
           }

@@ -55,13 +55,14 @@ const Home = () => {
 					<div className="homeContainer2">
 						<div className="homeCollumn1">
 							<div>
-								Je suis tombé la programmation car je vois ça
-								comme une enigme a résoudre. 😁
+								J'affectionne tout particulièrement la
+								programmation, car je vois ça comme une énigme à
+								résoudre. 😁
 							</div>
 							<div className="space" />
 							<div>
-								Je maitrise des langages de programmation connu
-								comme{" "}
+								Je maîtrise des langages de programmation connus
+								comme :{" "}
 								<span className="importantText">
 									Java, JavaScript et PostgreSQL.
 								</span>
@@ -69,11 +70,11 @@ const Home = () => {
 							<div className="space" />
 							<div>
 								L'informatique est ma passion, c'est pourquoi
-								j'aime découvrire de nouvelle téchnologie.
+								j'aime découvrir de nouvelle technologies.
 							</div>
 							<div className="space" />
 							<div>
-								Dès que l'ocasion se présente je créer des{" "}
+								Dès que l'occasion se présente, je crée des{" "}
 								<NavLink
 									exact="true"
 									to="/Projects"
@@ -106,7 +107,7 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="home3">
-					<h1>OÙ ME TROUVÉ</h1>
+					<h1>OÙ ME TROUVER</h1>
 					<div className="space" />
 					<div>
 						N'hésitez pas à me{" "}

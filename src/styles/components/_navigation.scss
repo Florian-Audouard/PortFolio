@@ -70,7 +70,7 @@ $bordercolor : red;
         bottom: 0;
         width: 0;
         height: 5px;
-        background-color: darkblue ;
+        background-color: $color1 ;
         border-radius: 10px;
         transition: width 0.25s ease-out;
         }

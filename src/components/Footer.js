@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<span className="footerText footerCollumn">
-				Designer et développer par Audouard Florian
+				Conçu et développé par Audouard Florian
 			</span>
 
 			<a
