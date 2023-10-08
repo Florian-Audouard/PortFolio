@@ -56,7 +56,7 @@ const About = () => {
 							<ul className="HobbieList">
 								<li>
 									<LuGamepad2 />
-									Jeux Video
+									Jouer aux Jeux Video
 								</li>
 								<li>
 									<GiOpenBook />
@@ -91,7 +91,7 @@ const About = () => {
 					<FaAngular />
 					<BsGit />
 				</div>
-				<h1 className="titleSkill">
+				<h1 className="titleTool">
 					<span className="importantText">Outils</span> que j'utilise
 				</h1>
 				<div className="aboutContainer2 aboutEndOfPage">
