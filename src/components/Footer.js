@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 const Footer = () => {
 	return (
 		<footer>
-			<span className="footerText footerCollumn">
+			<span className="footerText footerCollumn firstCollumn">
 				Conçu et développé par Audouard Florian
 			</span>
 
@@ -18,7 +18,7 @@ const Footer = () => {
 			>
 				Web illustrations by Storyset
 			</a>
-			<span className="footerCollumn">
+			<div className="footerCollumn lastCollumn">
 				<a
 					href="https://github.com/Florian-Audouard"
 					target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
 				>
 					<BsLinkedin size={20} />
 				</a>
-			</span>
+			</div>
 		</footer>
 	);
 };

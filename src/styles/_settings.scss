@@ -31,9 +31,17 @@ a {
 .importantText{
     color:$color1;
 }
-.space{
-    padding-top: 25px;
-    padding-bottom: 25px;
+@media only screen and (min-width: 780px) {
+    .space{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .space{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 ul{
     list-style: none;
@@ -72,4 +80,3 @@ ul{
     background: $color1;
     border-radius: 12px;
   }
-  

@@ -35,9 +35,13 @@
       }
     .homeContainer1{
         padding-top: 50px;
-
-        display: flex;
         text-align: center;
+        
+        @media only screen and (min-width: 780px) {
+          
+        display: flex;
+
+        
         .homeCollumn{
             width: 50%;
         }
@@ -45,7 +49,6 @@
             width: 50%;
         }
         .textWithImg >*{
-            text-align: justify;
             padding-left: 40%;
             padding-top: 10px;
         }
@@ -57,20 +60,56 @@
             padding-top: 50px;
 
         }
+      }
+      .textWithImg >*{
+        text-align: left;
+    }
+    @media only screen and (max-width: 780px) {
+        
+        .homeCollumn{
+          max-width: 70%;
+          display: block;
+          padding-left: 15%;
+      }
+      .homeCollumn >* {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+      }
+        img{
+          padding-top: 20px;
+          width: 90%;
+        }
+        #typeWriter{
+          font-size: 15px;
+        }
+        #salutHome{
+          text-align: center;
+        }
+      }
+
     }
     .home2{
         padding-top: 13%;
-        padding-left: 15%;
+        
         padding-bottom: 5%;
-
         .titleHome2{
-            padding-left: 10%;
-            padding-bottom: 5%;
-        }
+          padding-left: 10%;
+          padding-bottom: 5%;
+      }
+      img{
+        border: solid 5px $color1;
+        border-radius: 50%;
+    }
+    .homeContainer2{
+      text-align: center;
+    }
+        @media only screen and (min-width: 780px) {
+          padding-left: 15%;
+
         
         .homeContainer2{
             display: flex;
-            text-align: center;
 
             .homeCollumn1{
                 text-align: justify;
@@ -82,12 +121,35 @@
                 padding-left: 5%;
                 img{
                     width: 50%;
-                    border: solid 5px $color1;
-                    border-radius: 50%;
                 }
     
             }
         }
+      }
+      @media only screen and (max-width: 780px) {
+        .titleHome2{
+          text-align: center;
+          max-width: 80%;
+
+        }
+        .homeContainer2{
+          display: block;
+
+
+        .homeCollumn1{
+          max-width: 80%;
+          padding-left: 10%;
+          font-size: 17px;
+          text-align: left;
+      }
+        img{
+          margin-top: 10%;
+          width: 80%;
+          text-align: center;
+        }
+      }
+
+      }
 
     }
     .home3{

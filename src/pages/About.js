@@ -14,7 +14,11 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { BsGit } from "react-icons/bs";
-import { BiLogoPostgresql, BiLogoVisualStudio } from "react-icons/bi";
+import {
+	BiLogoPostgresql,
+	BiLogoVisualStudio,
+	BiLogoPhp,
+} from "react-icons/bi";
 import { SiVercel } from "react-icons/si";
 
 const About = () => {
@@ -81,6 +85,7 @@ const About = () => {
 					<FaPython />
 					<FaJava />
 					<IoLogoJavascript />
+					<BiLogoPhp />
 					<BiLogoPostgresql />
 					<FaReact />
 					<FaAngular />

@@ -7,13 +7,14 @@ $bordercolor : red;
     transition: all .3s ease-out;
     background-color: transparent ;
     overflow: hidden;
-    height: 75px;
     user-select: none;
     z-index:100;
+    
+    #textLogoNavBar{
+        font-family: BlackHole;
+    }
     #logoNavBar{
-        float: left;
-        cursor: pointer;
-        padding-left: 200px;
+        padding-left: 10%;
 
     }
     #navBarGithub{
@@ -22,9 +23,18 @@ $bordercolor : red;
         padding-bottom: 7px ;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    li{
+        font-size: 21px;
+    }
+    @media only screen and (min-width: 780px) {
+    #logoNavBar{
+        float: left;
+        cursor: pointer;
+
+    }
+    #navBarGithub{
         margin-top: -7px;
-
-
     }
 
     ul {
@@ -40,7 +50,6 @@ $bordercolor : red;
     }
 
     li{
-        color: white;
         float: right;
         margin-left: 1em;
         margin-right: 1em;
@@ -52,7 +61,6 @@ $bordercolor : red;
     #textLogoNavBar{
         padding-top: 10px;
         font-size: 55px;
-        font-family: BlackHole;
     }
     li:not(.noUnderline){
 
@@ -78,6 +86,43 @@ $bordercolor : red;
         width: 100%;            
         }
     }
+}
+    @media only screen and (max-width: 780px) {
+        display: block;
+        text-align: center;
+        #logoNavBar{
+            float: left;
+            font-size: 45px;
+    
+        }
+        .clickHandler{
+            float: right;
+            padding-right: 10%;
+            padding-top: 10px;
+        }
+        .clickHandler svg{
+            width: 40px;
+            height: 40px;
+        }
+        .navBar{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        li{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .logoBar{
+            height: 60px;
+        }
+        #navBarGithub{
+            margin-bottom: 10px;
+        }
+    }
+
+
     
     
 }
