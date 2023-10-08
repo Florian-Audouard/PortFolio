@@ -1,0 +1,146 @@
+.home{
+    .space{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .importantText{
+        color:darkblue;
+    }
+    .waving{
+        animation-duration: 2s;
+        transform-origin: 70% 70%;
+        animation-iteration-count: infinite;
+        animation-name: waving;
+    }
+    @keyframes waving {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(14deg);
+        }
+        20% {
+          transform: rotate(-8deg);
+        }
+        30% {
+          transform: rotate(14deg);
+        }
+        40% {
+          transform: rotate(-4deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+        60% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    .homeContainer1{
+        padding-top: 50px;
+
+        display: flex;
+        text-align: center;
+        .homeCollumn{
+            width: 50%;
+        }
+        img{
+            width: 50%;
+        }
+        .textWithImg >*{
+            text-align: left;
+            padding-left: 40%;
+            padding-top: 10px;
+        }
+        #salutHome{
+            padding-top: 10%;
+            padding-left: 45%;
+        }
+        #typeWriter{
+            padding-top: 50px;
+
+        }
+    }
+    .home2{
+        padding-top: 13%;
+        padding-left: 15%;
+        padding-bottom: 5%;
+
+        .titleHome2{
+            padding-left: 10%;
+            padding-bottom: 5%;
+        }
+        
+        .homeContainer2{
+            display: flex;
+            text-align: center;
+
+            .homeCollumn1{
+                text-align: left;
+                width:45%;
+                font-size: 20px;
+            }
+            .homeCollumn2{
+                width:40%;
+                padding-left: 5%;
+                img{
+                    width: 50%;
+                    border: solid 5px darkblue;
+                    border-radius: 50%;
+                }
+    
+            }
+        }
+
+    }
+    .home3{
+        text-align: center;
+        padding-bottom: 5%;
+        .socialIconBox{
+            padding-top: 25px;
+        }
+        .socialIcon{
+            margin-left: 15px;
+            margin-right: 15px;
+            position: relative ;
+            display: inline-block ;
+            width: 40px ;
+            height: 40px ;
+            text-align: center ;
+            font-size: 1.2em ;
+            line-height: 2em ;
+            background-color: white ;
+            color:darkblue;
+            border-radius: 50% ;
+            transition: 0.5s ;
+        }
+        .socialIcon::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: blue;
+            transition: 0.5s;
+            transform: scale(0.9);
+            z-index: -1;
+        }
+        .socialIcon:hover::before {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px blue;
+          }
+          
+          .socialIcons:hover {
+            color: darkblue;
+            box-shadow: 0 0 10px blue;
+            text-shadow: 0 0 5px blue;
+          }
+          
+        
+    }    
+
+}

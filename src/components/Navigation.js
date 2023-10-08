@@ -12,8 +12,6 @@ const Navigation = () => {
 	function isSticky() {
 		if (window.scrollY >= 20) setNavSticky("sticky");
 		else setNavSticky("");
-
-		console.log(window.scrollY);
 	}
 	window.addEventListener("scroll", isSticky);
 

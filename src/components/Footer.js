@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineGithub } from "react-icons/ai";
+import { FaGithubSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
@@ -23,14 +23,14 @@ const Footer = () => {
 					target="_blank"
 					rel="noreFerrer"
 				>
-					<AiOutlineGithub size={40} />
+					<FaGithubSquare size={20} />
 				</a>
 				<a
 					href="https://www.linkedin.com/in/florian-audouard-8b5b451a3/"
 					target="_blank"
 					rel="noreFerrer"
 				>
-					<BsLinkedin size={40} />
+					<BsLinkedin size={20} />
 				</a>
 			</span>
 		</footer>
