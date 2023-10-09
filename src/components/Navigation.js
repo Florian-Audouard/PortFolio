@@ -21,7 +21,7 @@ const Navigation = () => {
 	}
 
 	function addaptNavBar() {
-		if (window.innerWidth < 780) {
+		if (window.innerWidth < 1200) {
 			if (isMobile === undefined || !isMobile) {
 				setExtend(false);
 			}

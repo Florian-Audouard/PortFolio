@@ -94,7 +94,7 @@ const About = () => {
 				<h1 className="titleTool">
 					<span className="importantText">Outils</span> que j'utilise
 				</h1>
-				<div className="aboutContainer2 aboutEndOfPage">
+				<div className="aboutContainer2">
 					<BiLogoVisualStudio />
 					<FaWindows />
 					<SiVercel />

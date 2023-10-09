@@ -7,6 +7,8 @@
 }
 
 $color1:rgb(0,150,255);
+$mobilSize:1200px;
+
 *{
     padding: 0;
     margin: 0;
@@ -31,13 +33,13 @@ a {
 .importantText{
     color:$color1;
 }
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: $mobilSize) {
     .space{
         padding-top: 25px;
         padding-bottom: 25px;
     }
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: $mobilSize) {
     .space{
         padding-top: 15px;
         padding-bottom: 15px;

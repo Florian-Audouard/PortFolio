@@ -1,10 +1,10 @@
 .projects{
     .projectsTitle{
         text-align: center;
-        @media only screen and (min-width: 780px) {
+        @media only screen and (min-width: $mobilSize) {
             padding-top: 5%;
         }
-        @media only screen and (max-width: 780px) {
+        @media only screen and (max-width: $mobilSize) {
             padding-top: 15%;
             padding-bottom: 15%;
             max-width: 80%;
@@ -12,12 +12,12 @@
         }
     }
     .projectsContainer{
-
-        padding-top: 5%;
-        @media only screen and (min-width: 780px) {
+        
+        @media only screen and (min-width: $mobilSize) {
             display: flex;
             width: 70%;
             padding-left: 15%;
+            
         }
         
         

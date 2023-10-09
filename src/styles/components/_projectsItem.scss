@@ -6,13 +6,25 @@
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 18%;
+
+
     border: 1px solid $color1;
     border-radius: 5px;
     box-shadow: 0 0 10px $color1;
 
+    @media only screen and (min-width: $mobilSize) {
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+    @media only screen and (max-width: $mobilSize) {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     img{
         width: 100%;
     }
@@ -30,28 +42,28 @@
         padding-top: 20px;
     }
     .projectLinks{
-        font-size: 20px;
+        font-size: 17px;
         svg{
-            width: 17px;
-            height: 17px;
+            width: 14px;
+            height:14px;
             
         }
     }
-    @media only screen and (min-width: 780px) {
+    @media only screen and (min-width: $mobilSize) {
         .projectLinks{
             padding-top: 10px;
             padding-bottom: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
             
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
             svg{
-                margin-right: 10px;
+                margin-right: 5px;
             }
         }
     }
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: $mobilSize) {
         .projectLinks{
             padding-top: 5px;
             padding-bottom: 5px;

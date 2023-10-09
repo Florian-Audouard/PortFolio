@@ -27,7 +27,7 @@ $bordercolor : red;
     li{
         font-size: 21px;
     }
-    @media only screen and (min-width: 780px) {
+    @media only screen and (min-width: $mobilSize) {
     #logoNavBar{
         float: left;
         cursor: pointer;
@@ -87,7 +87,7 @@ $bordercolor : red;
         }
     }
 }
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: $mobilSize) {
         display: block;
         text-align: center;
         #logoNavBar{

@@ -37,7 +37,7 @@
         padding-top: 50px;
         text-align: center;
         
-        @media only screen and (min-width: 780px) {
+        @media only screen and (min-width: $mobilSize) {
           
         display: flex;
 
@@ -64,7 +64,7 @@
       .textWithImg >*{
         text-align: left;
     }
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: $mobilSize) {
         
         .homeCollumn{
           max-width: 70%;
@@ -106,7 +106,7 @@
       text-align: center;
       
     }
-        @media only screen and (min-width: 780px) {
+        @media only screen and (min-width: $mobilSize) {
           padding-left: 15%;
 
         
@@ -129,7 +129,7 @@
             }
         }
       }
-      @media only screen and (max-width: 780px) {
+      @media only screen and (max-width: $mobilSize) {
         .titleHome2{
           text-align: center;
           max-width: 80%;
@@ -157,7 +157,6 @@
     }
     .home3{
         text-align: center;
-        padding-bottom: 5%;
         .socialIconBox{
             padding-top: 5%;
         }
