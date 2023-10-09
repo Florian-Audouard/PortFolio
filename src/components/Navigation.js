@@ -22,16 +22,21 @@ const Navigation = () => {
 
 	function addaptNavBar() {
 		if (window.innerWidth < 780) {
+			if (isMobile === undefined || !isMobile) {
+				setExtend(false);
+			}
 			setIsMobile(true);
 			setNavSticky("sticky");
+			window.onscroll = undefined;
 		} else {
-			window.addEventListener("scroll", isSticky);
+			setIsMobile(false);
+			window.onscroll = isSticky;
+			setExtend(true);
 		}
 	}
 	window.addEventListener("resize", addaptNavBar);
 	useEffect(() => {
 		addaptNavBar();
-		setExtend(false);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (

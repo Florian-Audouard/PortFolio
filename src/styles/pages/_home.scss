@@ -97,12 +97,14 @@
           padding-left: 10%;
           padding-bottom: 5%;
       }
-      img{
+      .svgContainer{
         border: solid 5px $color1;
         border-radius: 50%;
-    }
+        overflow: hidden;
+      }
     .homeContainer2{
       text-align: center;
+      
     }
         @media only screen and (min-width: 780px) {
           padding-left: 15%;
@@ -119,7 +121,8 @@
             .homeCollumn2{
                 width:40%;
                 padding-left: 5%;
-                img{
+                .svgContainer{
+                    margin-left: 25%;
                     width: 50%;
                 }
     
@@ -142,10 +145,10 @@
           font-size: 17px;
           text-align: left;
       }
-        img{
-          margin-top: 10%;
+        .svgContainer{
+          margin-top: 5%;
+          margin-left: 10%;
           width: 80%;
-          text-align: center;
         }
       }
 
