@@ -1,0 +1,19 @@
+.notFound{
+    position: absolute;
+    left: 50%;
+    @media only screen and (min-width: $mobilSize) {
+        top: 50%;
+        width: 25vw;
+        height: 25vw;
+        margin-top: -12.5vw; 
+        margin-left: -12.5vw; 
+    }
+    @media only screen and (max-width: $mobilSize) {
+        top:40%;
+        width: 90vw;
+        height: 90vw;
+        margin-top: -36vw;
+        margin-left: -45vw;
+    }
+    
+}

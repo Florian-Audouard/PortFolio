@@ -3,6 +3,7 @@
         text-align: center;
         @media only screen and (min-width: $mobilSize) {
             padding-top: 5%;
+            padding-bottom: 5%;
         }
         @media only screen and (max-width: $mobilSize) {
             padding-top: 15%;

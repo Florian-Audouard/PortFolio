@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
-const Footer = () => {
+const Footer = ({ enoughSpace }) => {
+	const [isEnoughSpace, setIsEnoughSpace] = useState();
+
+	useEffect((_) => {
+		if (enoughSpace === undefined) {
+			setIsEnoughSpace(true);
+		} else {
+			setIsEnoughSpace(enoughSpace);
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 	return (
-		<footer>
+		<footer className={isEnoughSpace ? "" : "notEnoughSpace"}>
 			<span className="footerText footerCollumn firstCollumn">
 				Conçu et développé par Audouard Florian
 			</span>
