@@ -23,6 +23,7 @@ $bordercolor : red;
         padding-bottom: 7px ;
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 18px;
     }
     li{
         font-size: 21px;
@@ -31,6 +32,7 @@ $bordercolor : red;
     #logoNavBar{
         float: left;
         cursor: pointer;
+        margin-top: 11px;
 
     }
     #navBarGithub{
@@ -42,6 +44,7 @@ $bordercolor : red;
         margin-right: -0.5em;
         padding-right: 200px;
         padding-top: 25px;
+        margin-bottom: 25px;
     }
     svg{
         margin-bottom: -2px;
@@ -59,7 +62,6 @@ $bordercolor : red;
         justify-content: center;
     }
     #textLogoNavBar{
-        padding-top: 10px;
         font-size: 55px;
     }
     li:not(.noUnderline){
