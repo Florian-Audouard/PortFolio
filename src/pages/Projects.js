@@ -27,13 +27,6 @@ const Projects = () => {
 						text="Un site qui permet d'apprendre la logique mathématique sous forme de jeu de cartes.
 						 Ce site m'a donné l'occasion d'apprendre React."
 					/>
-					<ProjectsItem
-						img="image/Laptop-Barker.png"
-						title="Barker"
-						githubLink="https://github.com/GuillaumePerron/barker"
-						demoLink="https://barker-projet-info.vercel.app"
-						text="Un site web qui s'inspire de Twitter pour afficher des messages. Ce site a contribué au perfectionnement de mes compétences en backend et en base de données."
-					/>
 				</div>
 			</div>
 			<Footer />
