@@ -13,7 +13,7 @@ const Projects = () => {
 				</h1>
 				<div className="projectsContainer">
 					<ProjectsItem
-						url="https://vimeo.com/manage/videos/1123349044"
+						url="https://vimeo.com/1123354839?share=copy"
 						title="Les Cartes Logiques"
 						githubLink="https://github.com/DienF/Les-cartes-logiques"
 						demoLink="https://les-cartes-logiques.vercel.app"
@@ -23,7 +23,7 @@ const Projects = () => {
 						Ce travail m'a permis de combiner apprentissage théorique et mise en pratique technique dans un cadre pédagogique."
 					/>
 					<ProjectsItem
-						url="https://vimeo.com/1123339878?share=copy"
+						url="https://vimeo.com/1123354858?share=copy"
 						title="Simulation 3D du système solaire"
 						githubLink="https://github.com/Florian-Audouard/solarsystem"
 						text="Simulation 3D du système solaire développée en Java avec jMonkeyEngine.
@@ -32,7 +32,7 @@ const Projects = () => {
 						Les textures appliquées aux planètes renforcent l'aspect immersif et réaliste."
 					/>
 					<ProjectsItem
-						url="https://vimeo.com/manage/videos/1123347551"
+						url="https://vimeo.com/1123354824?share=copy"
 						title="AKELLER"
 						githubLink="https://github.com/Florian-Audouard/Akeller"
 						text="Application de gestion d'emplois du temps réalisée en collaboration avec Sopra Steria selon une méthodologie Agile/Scrum.

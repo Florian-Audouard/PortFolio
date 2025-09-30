@@ -69,7 +69,7 @@ const ProjectsItem = ({ url, title, text, githubLink, demoLink }) => {
 						Github
 					</a>
 				)}
-				{demoLink && (
+				{demoLink ? (
 					<a
 						href={demoLink}
 						className="projectLinks button"
@@ -78,6 +78,16 @@ const ProjectsItem = ({ url, title, text, githubLink, demoLink }) => {
 					>
 						<AiOutlinePlayCircle />
 						Démo
+					</a>
+				) : (isYouTubeVideo(url) || isVimeoVideo(url)) && (
+					<a
+						href={url}
+						className="projectLinks button"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<AiOutlinePlayCircle />
+						Watch Video
 					</a>
 				)}
 			</div>
