@@ -20,7 +20,7 @@ const Resume = () => {
 				<div>
 					<a
 						href={pdf}
-						target="_blank"
+						download="Florian_AUDOUARD.pdf"
 						rel="noreferrer"
 						className="button downloadButton"
 					>
