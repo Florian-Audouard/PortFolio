@@ -25,6 +25,46 @@
         margin-left: 10%;
         margin-right: 10%;
     }
+    .imageContainer {
+    position: relative; /* parent stacking context */
+    width: 100%;
+    display: inline-block;
+    z-index: 0; /* useful if you later use negative z-index */
+    overflow: hidden;
+    }
+
+    .imageContainer .base {
+    position: relative;   /* must be positioned for z-index to apply */
+    z-index: 2;           /* on top */
+    width: 100%;
+    display: block;
+    }
+
+    .imageContainer .overlay {
+    position: absolute;
+    top: 22%;
+    left: 11%;
+    width: 77%;
+    height: 44%;
+    border-radius: 2px;
+    z-index: 1;           /* behind .base */
+    pointer-events: none; /* optional */
+    }
+
+    // .youtube-overlay {
+    // position: absolute;
+    // top: 0; left: 0;
+    // width: 100%; height: 100%;
+    // background: black; /* or match background */
+    // opacity: 0; /* start hidden */
+    // animation: fadeOut 3s forwards;
+    // animation-delay: 5s;
+    // }
+
+    // @keyframes fadeOut {
+    // 0% { opacity: 0; visibility: hidden; }
+    // 100% { opacity: 1; visibility: visible; }
+    // }
     img{
         width: 100%;
     }
