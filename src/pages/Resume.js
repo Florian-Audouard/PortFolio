@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import pdf from "../Assets/Florian_AUDOUARD.pdf";
+import pdf from "../Assets/CV_Florian_AUDOUARD.pdf";
 import { BsDownload } from "react-icons/bs";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -20,7 +20,7 @@ const Resume = () => {
 				<div>
 					<a
 						href={pdf}
-						download="Florian_AUDOUARD.pdf"
+						download="CV_Florian_AUDOUARD.pdf"
 						rel="noreferrer"
 						className="button downloadButton"
 					>
