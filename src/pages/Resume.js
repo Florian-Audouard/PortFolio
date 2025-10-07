@@ -10,6 +10,21 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const Resume = () => {
 	const [width, setWidth] = useState(1200);
 
+	const getDownloadButton = () => {
+		return (
+			<div>
+			<a
+				href={pdf}
+				download="CV_Florian_AUDOUARD.pdf"
+				rel="noreferrer"
+				className="button downloadButton"
+			>
+				<BsDownload />
+				Téléchargement
+			</a></div>
+		);
+	};
+
 	useEffect(() => {
 		setWidth(window.innerWidth);
 	}, []);
@@ -17,33 +32,13 @@ const Resume = () => {
 		<div>
 			<Navigation />
 			<div className="resume">
-				<div>
-					<a
-						href={pdf}
-						download="CV_Florian_AUDOUARD.pdf"
-						rel="noreferrer"
-						className="button downloadButton"
-					>
-						<BsDownload />
-						Téléchargement
-					</a>
-				</div>
+				{getDownloadButton()}
 				<div className="resumePdf">
 					<Document file={pdf}>
 						<Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
 					</Document>
 				</div>
-				<div>
-					<a
-						href={pdf}
-						target="_blank"
-						rel="noreferrer"
-						className="button downloadButton"
-					>
-						<BsDownload />
-						Téléchargement
-					</a>
-				</div>
+				{getDownloadButton()}
 			</div>
 
 			<Footer />
