@@ -87,7 +87,7 @@ const ProjectsItem = ({ url, title, text, githubLink, demoLink }) => {
 						rel="noreferrer"
 					>
 						<AiOutlinePlayCircle />
-						Watch Video
+						Vidéo
 					</a>
 				)}
 			</div>
