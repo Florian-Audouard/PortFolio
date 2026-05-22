@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  /* $color1 from the old SCSS */
+  --color-accent: rgb(0 150 255);
+
+  /* $mobilSize: 1200px -> use `nav:` for the desktop (min-width) styles */
+  --breakpoint-nav: 1200px;
+
+  --font-blackhole: "BlackHole", sans-serif;
+
+  --animate-waving: waving 2s infinite;
+
+  @keyframes waving {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@font-face {
+  font-family: "BlackHole";
+  src: url("/fonts/BlackHole/blackhole-bb.regular.ttf");
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background-image: linear-gradient(
+      to top,
+      #000019,
+      #000015,
+      #000011,
+      #00000c,
+      #000005
+    );
+    color: white;
+    font-family: "Raleway", serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  /* Restore default browser heading sizes that Tailwind's preflight removes. */
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(10, 10, 75);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 50, 255);
+    border-radius: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 100, 255);
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: rgb(0, 150, 255);
+  }
+}
+
+@layer components {
+  /* Old `.button` */
+  .btn {
+    @apply inline-block rounded-[5px] border border-accent bg-[rgba(10,10,75,0.75)] shadow-[0_0_5px_var(--color-accent)] transition-all duration-500 hover:scale-110 hover:bg-[rgba(10,10,100,0.75)] hover:shadow-[0_0_10px_var(--color-accent)];
+  }
+
+  /* Old `.importantText` */
+  .important {
+    @apply text-accent;
+  }
+
+  /* Old `.space` */
+  .space {
+    @apply py-[15px] nav:py-[25px];
+  }
+}
