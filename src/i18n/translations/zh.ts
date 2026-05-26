@@ -1,0 +1,95 @@
+import type { Translation } from "../types";
+
+export const zh: Translation = {
+  nav: {
+    home: "首页",
+    about: "关于",
+    projects: "项目",
+    resume: "简历",
+  },
+  home: {
+    greeting: "你好 ！",
+    iam: "我是 ",
+    name: "AUDOUARD FLORIAN",
+    typewriter: ["Web 开发者", "后端开发者", "软件开发者", "数据库开发者"],
+    presentTitle: {
+      prefix: "让我来 ",
+      emph: "自我介绍",
+      suffix: " 一下",
+    },
+    p1: "我特别喜欢编程，因为我把它看作一个需要解决的谜题。😁",
+    p2Lead: "我精通一些知名的编程语言，例如：",
+    p2Emph: "Java、JavaScript 和 PostgreSQL。",
+    p3: "计算机科学是我的热情所在，因此我热衷于探索新技术。",
+    p4Lead: "一有机会，我就会创建 ",
+    p4Projects: "项目",
+    p4Mid: "，使用 ",
+    p4Frameworks: " 现代框架",
+    p4Comme: "，比如 ",
+    p4FrameworkNames: "React 和 Angular。",
+    findTitle: "在哪里找到我",
+    contactLead: "欢迎随时 ",
+    contactEmph: "联系我",
+    illustrationAlt: "开发者插图",
+  },
+  about: {
+    whoTitle: { prefix: "我是", emph: "谁", suffix: "" },
+    intro1Lead: "你好，我是 ",
+    intro1Name: "Audouard Florian",
+    intro1Mid: "，来自 ",
+    intro1Place: "法国的 La Londe les Maures。",
+    intro2Lead: "我刚刚完成了我的 ",
+    intro2Emph: "计算机科学学士学位",
+    intro2Suffix: "，目前正在找工作。",
+    hobbiesIntro: "除了对编程的热爱，以下是我喜欢的一些活动：",
+    hobbyGames: "玩电子游戏",
+    hobbyManga: "观看和阅读漫画",
+    hobbyTravel: "旅行",
+    skillsTitle: {
+      prefix: "专业",
+      emph: "技能",
+      suffix: "",
+    },
+    toolsTitle: { prefix: "我使用的", emph: "工具", suffix: "" },
+    illustrationAlt: "开发者插图",
+  },
+  projectsPage: {
+    title: { prefix: "我最近的", emph: "项目", suffix: "" },
+  },
+  projects: [
+    {
+      url: "https://vimeo.com/1123354839?share=copy",
+      title: "逻辑卡牌",
+      githubLink: "https://github.com/DienF/Les-cartes-logiques",
+      demoLink: "https://les-cartes-logiques.vercel.app",
+      text: "一个学校项目，旨在以互动卡牌游戏的形式创建一个学习命题逻辑的网站。该应用程序可以让你操作逻辑公式，并以寓教于乐的方式理解它们之间的关系。这个项目让我有机会学习 React，并提升我设计交互界面的能力。这项工作使我能够在教学环境中将理论学习与动手实践相结合。",
+    },
+    {
+      url: "https://vimeo.com/1123354858?share=copy",
+      title: "太阳系 3D 模拟",
+      githubLink: "https://github.com/Florian-Audouard/solarsystem",
+      text: "使用 Java 和 jMonkeyEngine 开发的太阳系 3D 模拟。该项目可以让你观察围绕太阳运行的行星，距离和大小均可调整。交互式摄像机使你能够在 3D 场景中自由探索。应用于行星的纹理增强了沉浸感和真实感。",
+    },
+    {
+      url: "https://vimeo.com/1123354824?share=copy",
+      title: "AKELLER",
+      githubLink: "https://github.com/Florian-Audouard/Akeller",
+      text: "与 Sopra Steria 合作、按照敏捷/Scrum 方法开发的课程表管理应用程序。该项目可以创建、编辑和组织课程表，同时管理用户及其角色。界面使用 JavaFX 开发，后端使用 Quarkus，数据库使用 PostgreSQL。部署通过 Docker 完成。",
+    },
+  ],
+  resume: {
+    download: "下载",
+  },
+  footer: {
+    designed: "由 Audouard Florian 设计和开发",
+    illustrations: "Web illustrations by Storyset",
+  },
+  notFound: {
+    alt: "页面未找到",
+  },
+  projectsItem: {
+    github: "Github",
+    demo: "演示",
+    video: "视频",
+  },
+};

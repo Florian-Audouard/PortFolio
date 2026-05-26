@@ -2,7 +2,7 @@
 //
 // To add a language:
 //   1. Add an entry to `LANGUAGES` below (code + label + flag emoji).
-//   2. Add a matching translation block in `translations.ts`
+//   2. Create `translations/<code>.ts` and wire it into `translations.ts`
 //      (TypeScript will error until you do — the `Language` type is derived
 //      from this list, so `translations` must cover every code).
 // Nothing else needs to change: the switcher and the context adapt automatically.
@@ -19,6 +19,14 @@ export interface LanguageMeta {
 export const LANGUAGES = [
   { code: "fr", label: "Français", flag: "🇫🇷" },
   { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "de", label: "Deutsch", flag: "🇩🇪" },
+  { code: "es", label: "Español", flag: "🇪🇸" },
+  { code: "it", label: "Italiano", flag: "🇮🇹" },
+  { code: "pt", label: "Português", flag: "🇵🇹" },
+  { code: "ru", label: "Русский", flag: "🇷🇺" },
+  { code: "zh", label: "中文", flag: "🇨🇳" },
+  { code: "ja", label: "日本語", flag: "🇯🇵" },
+  { code: "ko", label: "한국어", flag: "🇰🇷" },
 ] as const satisfies readonly LanguageMeta[];
 
 /** Union of supported language codes, e.g. "fr" | "en". Derived from LANGUAGES. */
