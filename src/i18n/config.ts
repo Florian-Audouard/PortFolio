@@ -1,7 +1,7 @@
 // Single source of truth for the languages the site supports.
 //
 // To add a language:
-//   1. Add an entry to `LANGUAGES` below (code + label + flag emoji).
+//   1. Add an entry to `LANGUAGES` below (code + label + flagCode).
 //   2. Create `translations/<code>.ts` and wire it into `translations.ts`
 //      (TypeScript will error until you do — the `Language` type is derived
 //      from this list, so `translations` must cover every code).
@@ -12,21 +12,21 @@ export interface LanguageMeta {
   code: string;
   /** Name shown to users (accessible label / tooltip). */
   label: string;
-  /** Flag emoji rendered in the switcher. */
-  flag: string;
+  /** ISO 3166-1 alpha-2 code used to render the flag image. */
+  flagCode: string;
 }
 
 export const LANGUAGES = [
-  { code: "fr", label: "Français", flag: "🇫🇷" },
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  { code: "es", label: "Español", flag: "🇪🇸" },
-  { code: "it", label: "Italiano", flag: "🇮🇹" },
-  { code: "pt", label: "Português", flag: "🇵🇹" },
-  { code: "ru", label: "Русский", flag: "🇷🇺" },
-  { code: "zh", label: "中文", flag: "🇨🇳" },
-  { code: "ja", label: "日本語", flag: "🇯🇵" },
-  { code: "ko", label: "한국어", flag: "🇰🇷" },
+  { code: "fr", label: "Français", flagCode: "fr" },
+  { code: "en", label: "English", flagCode: "gb" },
+  { code: "de", label: "Deutsch", flagCode: "de" },
+  { code: "es", label: "Español", flagCode: "es" },
+  { code: "it", label: "Italiano", flagCode: "it" },
+  { code: "pt", label: "Português", flagCode: "pt" },
+  { code: "ru", label: "Русский", flagCode: "ru" },
+  { code: "zh", label: "中文", flagCode: "cn" },
+  { code: "ja", label: "日本語", flagCode: "jp" },
+  { code: "ko", label: "한국어", flagCode: "kr" },
 ] as const satisfies readonly LanguageMeta[];
 
 /** Union of supported language codes, e.g. "fr" | "en". Derived from LANGUAGES. */

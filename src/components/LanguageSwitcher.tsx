@@ -3,6 +3,9 @@ import { createPortal } from "react-dom";
 import { useLanguage } from "../i18n/LanguageContext";
 import { LANGUAGES } from "../i18n/config";
 
+const flagUrl = (flagCode: string) =>
+  `https://flagcdn.com/w40/${flagCode.toLowerCase()}.png`;
+
 // A single dropdown that lists every language declared in `config.ts`.
 // The trigger shows the current language; clicking it opens a scrollable
 // panel, so the control stays compact even with many languages.
@@ -74,7 +77,14 @@ const LanguageSwitcher = () => {
         title={current.label}
         className="flex cursor-pointer items-center gap-[8px] rounded-[6px] border border-accent bg-[rgba(10,10,75,0.75)] px-[12px] py-[6px] text-[18px] leading-none transition-all duration-300 hover:shadow-[0_0_10px_var(--color-accent)]"
       >
-        <span className="text-[22px]">{current.flag}</span>
+        <img
+          src={flagUrl(current.flagCode)}
+          width={20}
+          height={15}
+          loading="lazy"
+          alt=""
+          className="h-[15px] w-[20px] rounded-[2px]"
+        />
         <span className="text-[16px]">{current.label}</span>
         <span
           className={`text-[12px] transition-transform duration-300 ${
@@ -93,7 +103,7 @@ const LanguageSwitcher = () => {
             style={{ top: position.top, right: position.right }}
             className="fixed z-[1000] max-h-[60vh] min-w-[160px] overflow-y-auto rounded-[8px] border border-accent bg-[rgb(5,5,43)] py-[4px] shadow-[0_0_15px_var(--color-accent)]"
           >
-            {LANGUAGES.map(({ code, label, flag }) => (
+            {LANGUAGES.map(({ code, label, flagCode }) => (
               <li key={code} role="option" aria-selected={language === code}>
                 <button
                   type="button"
@@ -105,7 +115,14 @@ const LanguageSwitcher = () => {
                     language === code ? "text-accent" : ""
                   }`}
                 >
-                  <span className="text-[22px]">{flag}</span>
+                  <img
+                    src={flagUrl(flagCode)}
+                    width={20}
+                    height={15}
+                    loading="lazy"
+                    alt=""
+                    className="h-[15px] w-[20px] rounded-[2px]"
+                  />
                   <span>{label}</span>
                 </button>
               </li>

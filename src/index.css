@@ -66,7 +66,16 @@
       #000005
     );
     color: white;
-    font-family: "Raleway", serif;
+    /* Include emoji-capable fallbacks so flag emoji render cross-browser. */
+    font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+  }
+
+  /* Force an emoji-capable font for inline emoji glyphs (e.g. country flags). */
+  .emoji {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji", sans-serif;
   }
 
   a {
